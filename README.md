@@ -27,59 +27,59 @@ pip install cs50
 
 - **ATM Transactions:** Delve into financial transactions associated with ATMs.
 
-  **Step 1.1:** Click on "ATM Transactions" in the navigation bar to access the ATM Transactions tab.
+  **1.** Click on "ATM Transactions" in the navigation bar to access the ATM Transactions tab.
 
-  **Step 1.2:** Filter ATM transactions by specifying the month, day, and ATM location.
+  **2.** Filter ATM transactions by specifying the month, day, and ATM location.
 
-  **Step 1.3:** View the filtered ATM transactions, complete with account numbers, ATM locations, transaction types, and amounts.
+  **3.** View the filtered ATM transactions, complete with account numbers, ATM locations, transaction types, and amounts.
 
 - **Bakery Security Logs:** Scrutinize security logs from the local bakery.
 
-  **Step 1.1:** Click on "Bakery Security Logs" in the navigation bar to access the Bakery Security Logs tab.
+  **1.:** Click on "Bakery Security Logs" in the navigation bar to access the Bakery Security Logs tab.
 
-  **Step 1.2:** Filter bakery security logs by specifying the month, day, and hour.
+  **2.** Filter bakery security logs by specifying the month, day, and hour.
 
-  **Step 1.3:** Explore the filtered bakery security logs, including hour, minute, license plate, and activity.
+  **3.** Explore the filtered bakery security logs, including hour, minute, license plate, and activity.
 
 - **Crime Scene Reports:** Investigate incidents and their details.
 
-  **Step 1.1:** Click on "Crime Scene Reports" in the navigation bar to access the Crime Scene Reports tab.
+  **1.** Click on "Crime Scene Reports" in the navigation bar to access the Crime Scene Reports tab.
 
-  **Step 1.2:** Filter crime scene reports by specifying the month and day.
+  **2.** Filter crime scene reports by specifying the month and day.
 
-  **Step 1.3:** Review the filtered crime scene reports, revealing street names and descriptions.
+  **3.** Review the filtered crime scene reports, revealing street names and descriptions.
 
 - **Flights:** Trace flight records for potential escape routes.
 
-  **Step 1.1:** Click on "Flights" in the navigation bar to access the Flights tab.
+  **1.** Click on "Flights" in the navigation bar to access the Flights tab.
 
-  **Step 1.2:** Filter flight records by specifying the month and day.
+  **2.** Filter flight records by specifying the month and day.
 
-  **Step 1.3:** Examine the filtered flight records, detailing flight IDs, hours, minutes, origin airports, destination airports, and cities.
+  **3.** Examine the filtered flight records, detailing flight IDs, hours, minutes, origin airports, destination airports, and cities.
 
 - **Interviews:** Read through interviews conducted during the investigation.
 
-  **Step 1.1:** Click on "Interviews" in the navigation bar to access the Interviews tab.
+  **1.** Click on "Interviews" in the navigation bar to access the Interviews tab.
 
-  **Step 1.2:** Filter interviews by specifying the month and day.
+  **2.** Filter interviews by specifying the month and day.
 
-  **Step 1.3:** Peruse the filtered interviews, including interviewee names and transcripts.
+  **3.** Peruse the filtered interviews, including interviewee names and transcripts.
 
 - **Passengers:** Examine the list of passengers on various flights.
 
-  **Step 1.1:** Click on "Passengers" in the navigation bar to access the Passengers tab.
+  **1.** Click on "Passengers" in the navigation bar to access the Passengers tab.
 
-  **Step 1.2:** Filter passengers by specifying the flight ID.
+  **2.** Filter passengers by specifying the flight ID.
 
-  **Step 1.3:** Investigate the filtered passenger list, complete with passport numbers and seat information.
+  **3.** Investigate the filtered passenger list, complete with passport numbers and seat information.
 
 - **Phone Calls:** Unearth conversations to uncover more evidence.
 
-  **Step 1.1:** Click on "Phone Calls" in the navigation bar to access the Phone Calls tab.
+  **1.** Click on "Phone Calls" in the navigation bar to access the Phone Calls tab.
 
-  **Step 1.2:** Filter phone calls by specifying the month and day.
+  **2.** Filter phone calls by specifying the month and day.
 
-  **Step 1.3:** Review the filtered phone call records, including caller, receiver, and call duration.
+  **3.** Review the filtered phone call records, including caller, receiver, and call duration.
 
 ### People Search
 
