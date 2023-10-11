@@ -89,29 +89,29 @@ pip install cs50
 
   **Step 1.3:** Review the filtered phone call records, including caller, receiver, and call duration.
 
+### People Search
+
+**Step 2:** Embark on the quest to locate individuals within the database using a diverse set of search criteria. You can search based on passport numbers, account numbers, and more, making it an invaluable tool for your investigation.
+
+- Use the "People" tab in the navigation bar to perform these searches.
+
 ### Crack the Case
 
-**Step 2:** Your primary mission is to decipher the riddle by deducing three key pieces of information:
+**Step 3:** Your primary mission is to decipher the riddle by deducing three key pieces of information:
 
 1. **The Thief's Identity**: Deduce the name of the thief who absconded with the CS50 Duck.
 
-   **Step 2.1:** On the home page, enter the name of the thief in the input field labeled "Who is the thief?".
+   **Step 3.1:** On the home page, enter the name of the thief in the input field labeled "Who is the thief?".
 
 2. **Destination City**: Uncover the city where the thief made their escape.
 
-   **Step 2.2:** In the home page, provide the city where the thief escaped to in the input field labeled "What city did the thief escape to?".
+   **Step 3.2:** In the home page, provide the city where the thief escaped to in the input field labeled "What city did the thief escape to?".
 
 3. **Accomplice's Name**: Reveal the identity of the thief's partner in crime.
 
-   **Step 2.3:** Still on the home page, enter the name of the thief's accomplice in the input field labeled "Who is the thief's accomplice?".
+   **Step 3.3:** Still on the home page, enter the name of the thief's accomplice in the input field labeled "Who is the thief's accomplice?".
 
 - When you submit your answers, the application will scrutinize your responses. If they align with the truth, you will be gracefully redirected to a success page. In case your answers fall short, an error message will guide you to make another attempt.
-
-### People Search
-
-**Step 3:** Embark on the quest to locate individuals within the database using a diverse set of search criteria. You can search based on passport numbers, account numbers, and more, making it an invaluable tool for your investigation.
-
-- Use the "People" tab in the navigation bar to perform these searches.
 
 ## Acknowledgments
 
