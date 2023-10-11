@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card mb-4 h-100">
+                <div class="card-body">
+                    <h2 class="card-title text-center" style=font-family:'Playfair Display', sans-serif;>The CS50 Duck has been stolen!</h2>
+                    <p class="card-text text-center">
+                        The town of Fiftyville has called upon you to solve the mystery of the stolen duck.
+                        Authorities believe that the thief stole the duck and then, shortly afterwards, took a flight out of town with the help of an accomplice.
+                    </p>
+                    <p class="card-text">
+                        All you know is that the theft took place on <strong>July 28, 2021</strong> and that it took place on <strong>Humphrey Street</strong>.
+                    </p>
+                    <p class="card-text">
+                        Fortunately, you have access to a database for that year. You can explore the tables by clicking on the navigation bar.
+                    </p>
+                    <p style="font-size: x-small;"><strong>Hint:</strong> You may start by looking for a crime scene report that matches the date and the location of the crime.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mx-auto">
+            <div class="card h-100">
+                <div class="card-body">
+                    <p class="card-text">Your goal is to identify:</p>
+                    <form method="post" class="needs-validation mx-auto" novalidate>
+                        <div class="form-group mb-4">
+                            <label for="thief">Who is the thief?</label>
+                            <input type="text" class="form-control form-control-sm smaller-input" id="thief" name="thief" required autocomplete="off">
+                            <div class="invalid-feedback">Please provide the thief's name.</div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="city">What city did the thief escape to?</label>
+                            <input type="text" class="form-control form-control-sm smaller-input" id="city" name="city" required autocomplete="off">
+                            <div class="invalid-feedback">Please provide the city where the thief escaped to.</div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="accomplice">Who is the thief's accomplice?</label>
+                            <input type="text" class="form-control form-control-sm smaller-input" id="accomplice" name="accomplice" required autocomplete="off">
+                            <div class="invalid-feedback">Please provide the accomplice's name.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    {% if error_message %}
+                    <p class="text-danger mt-3">{{ error_message }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
