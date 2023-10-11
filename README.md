@@ -1,6 +1,6 @@
 # Fiftyville Mystery Web App
 
-Welcome to the Fiftyville Mystery web application! This app is your gateway to unravel the enigmatic story of the stolen CS50 Duck in the picturesque town of Fiftyville. The narrative revolves around an audacious thief who brazenly pilfered the iconic duck and, in a rapid turn of events, embarked on a hasty flight out of town, likely with the assistance of an accomplice. Your only leads are that the theft transpired on July 28, 2021, and the scene of the crime was the quaint Humphrey Street.
+Welcome to the Fiftyville Mystery web application! This app is designed to help you solve the mystery of the stolen CS50 Duck in the town of Fiftyville. Authorities believe that the thief stole the duck and then, shortly afterwards, took a flight out of town with the help of an accomplice. All you know is that the theft took place on July 28, 2021, and it happened on Humphrey Street.
 
 #### Video Demo: [Fiftyville Mystery Web App](https://youtu.be/D0R2Z-X8SZM)
 
