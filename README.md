@@ -35,7 +35,7 @@ pip install cs50
 
 - **Bakery Security Logs:** Scrutinize security logs from the local bakery.
 
-  **1.:** Click on "Bakery Security Logs" in the navigation bar to access the Bakery Security Logs tab.
+  **1.** Click on "Bakery Security Logs" in the navigation bar to access the Bakery Security Logs tab.
 
   **2.** Filter bakery security logs by specifying the month, day, and hour.
 
