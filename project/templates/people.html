@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    People
+{% endblock %}
+
+{% block main %}
+    <form action="/people" method="post" id="filterForm">
+        <div class="mb-3 row">
+            <h2>People</h2>
+            <div class="col">
+                <select class="form-control" id="search" name="search" required value=>
+                    <option disabled {% if search is none %}selected{% endif %}>Select search field</option>
+                    <option value="phone_number" {% if search == 'phone_number' %}selected{% endif %}>Phone Number</option>
+                    <option value="passport_number" {% if search == 'passport_number' %}selected{% endif %}>Passport Number</option>
+                    <option value="license_plate" {% if search == 'license_plate' %}selected{% endif %}>License Plate</option>
+                    <option value="account_number" {% if search == 'account_number' %}selected{% endif %}>Bank Account Number</option>
+                </select>
+            </div>
+            <div class="col">
+                <input autocomplete="off" autofocus class="form-control" id="value" name="value" placeholder="Search Value" required type="text" {% if value is not none %}value="{{ value }}"{% endif %}>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Filter</button>
+            </div>
+        </div>
+    </form>
+    {% if error_message %}
+        <p class="text-danger mt-3">{{ error_message }}</p>
+    {% endif %}
+    <div class="mb-3">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Passport Number</th>
+                    <th>License Plate</th>
+                    <th>Bank Account Number</th>
+                </tr>
+            </thead>
+            {% if people %}
+                <tbody>
+                    {% for row in people %}
+                        <tr>
+                            <td>{{ row.name }}</td>
+                            <td>{{ row.phone_number }}</td>
+                            <td>{{ row.passport_number }}</td>
+                            <td>{{ row.license_plate }}</td>
+                            <td>{{ row.bank_account }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% else %}
+                <tbody>
+                    <tr>
+                        <td colspan="5">No results found.</td>
+                    </tr>
+                </tbody>
+            {% endif %}
+        </table>
+    </div>
+    <script>
+        document.getElementById("filterForm").addEventListener("submit", function () {
+            window.location.href = ".";
+        });
+    </script>
+{% endblock %}

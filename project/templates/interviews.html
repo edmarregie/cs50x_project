@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Interviews
+{% endblock %}
+
+{% block main %}
+    <form action="/interviews" method="post" id="filterForm">
+        <div class="mb-3 row">
+            <h2>Interviews</h2>
+            <div class="col">
+                <input autocomplete="off" autofocus class="form-control" id="month" name="month" placeholder="Month" required type="number" value="{{ month }}">
+            </div>
+            <div class="col">
+                <input autocomplete="off" class="form-control" id="day" max="31" min="1" name="day" placeholder="Day" required type="number" value="{{ day }}">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Filter</button>
+            </div>
+        </div>
+    </form>
+    <div class="mb-3">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Transcript</th>
+                </tr>
+            </thead>
+            {% if interview %}
+                <tbody>
+                    {% for row in interview %}
+                        <tr>
+                            <td>{{ row.name }}</td>
+                            <td>{{ row.transcript }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% else %}
+                <tbody>
+                    <tr>
+                        <td colspan="2">No results found.</td>
+                    </tr>
+                </tbody>
+            {% endif %}
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("filterForm").addEventListener("submit", function () {
+            window.location.href = ".";
+        });
+    </script>
+{% endblock %}

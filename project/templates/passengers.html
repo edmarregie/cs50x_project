@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Passengers
+{% endblock %}
+
+{% block main %}
+    <form action="/passengers" method="post" id="filterForm">
+        <div class="mb-3 row">
+            <h2>Passengers</h2>
+            <div class="col">
+                <input autocomplete="off" autofocus class="form-control" id="flight_id" name="flight_id" placeholder="Flight ID" required type="number" value="{{ flight_id }}">
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Filter</button>
+            </div>
+        </div>
+    </form>
+    <div class="mb-3">
+        <table>
+            <thead>
+                <tr>
+                    <th>Passport Number</th>
+                    <th>Seat</th>
+                </tr>
+            </thead>
+            {% if passenger %}
+                <tbody>
+                    {% for row in passenger %}
+                        <tr>
+                            <td>{{  row.passport_number  }}</td>
+                            <td>{{  row.seat  }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% else %}
+                <tbody>
+                    <tr>
+                        <td colspan="4">No results found.</td>
+                    </tr>
+                </tbody>
+            {% endif %}
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("filterForm").addEventListener("submit", function () {
+            window.location.href = ".";
+        });
+    </script>
+{% endblock %}
