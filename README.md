@@ -73,14 +73,6 @@ pip install cs50
 
   **Step 1.3:** Investigate the filtered passenger list, complete with passport numbers and seat information.
 
-- **People:** Search for individuals based on different criteria.
-
-  **Step 1.1:** Click on "People" in the navigation bar to access the People tab.
-
-  **Step 1.2:** Perform targeted searches based on criteria like passport numbers or account numbers.
-
-  **Step 1.3:** Examine the search results, which may include names, phone numbers, passport numbers, license plates, and account numbers.
-
 - **Phone Calls:** Unearth conversations to uncover more evidence.
 
   **Step 1.1:** Click on "Phone Calls" in the navigation bar to access the Phone Calls tab.
@@ -99,7 +91,7 @@ pip install cs50
 
 **Step 3:** Your primary mission is to decipher the riddle by deducing three key pieces of information:
 
-1. **The Thief's Identity**: Deduce the name of the thief who absconded with the CS50 Duck.
+1. **The Thief's Identity**: Deduce the name of the thief who stole the CS50 Duck.
 
    **Step 3.1:** On the home page, enter the name of the thief in the input field labeled "Who is the thief?".
 
